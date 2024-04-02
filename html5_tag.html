@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!-- html 又稱為根元素 -->
+<!-- css :root 根元素(html)選擇器 -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>常用標籤</h1>
+
+    <h2>標體 h1~h6</h2>
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+
+    <hr>
+
+    <h2>段落 p</h2>
+    <p>我是段落文字</p>
+    <!-- Lorem 英文假字 -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consectetur id natus quam minus accusamus, quo
+        sequi aut quasi. Alias fugit praesentium voluptatem soluta deleniti repellat ea harum vero libero.</p>
+    <!-- Lorem => 5個假字 -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <!-- ctlorem -->
+    <p>本站要求則是眾多認為出口時刻字元，大小特殊似乎作家正常教育言論也要加速這麼，明年教學如果您下午很快有着建議病毒讓你寫出來，你會出台讀者時候就是業務體內，沉默電源表情忽然，成立瀏覽次數青草湖恐怕規劃即將資金，對待爆炸，裝置修改記憶所謂同意沉默精選顯卡都在收。
+    </p>
+    <!-- ctlorem10 10個中文假字 -->
+    <p>及時密碼開發頻道虛。</p>
+
+    <hr>
+
+    <h2>換行 br </h2>
+    鋼鐵人<br>
+    蜘蛛人<br>
+    美國隊長<br>
+
+    <!-- 
+        以下為無結尾標籤、空標籤
+        meta、link、img、input、br、hr
+     -->
+
+    <hr>
+
+    <h2 id="ol_list">有序號清單 ol</h2>
+    <!-- ordered List -->
+    <ol>
+        <!-- List item 清單項目 -->
+        <li>寫程式</li>
+        <li>看動畫</li>
+        <li>吃飯</li>
+        <li>睡覺</li>
+    </ol>
+
+    <a href="#a_link">前往 a 連結位置</a>
+
+    <!-- emment -->
+    <!-- oL>Li*5 -->
+    <ol>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ol>
+
+    <hr>
+
+    <h2 id="ul_list">無序號的清單 ul</h2>
+    <!-- type 棄用，建議用 css 的 List-style-type 調整 -->
+    <ul>
+        <li type="square">Lorem ipsum dolor sit amet.</li>
+        <li type="square">Lorem ipsum dolor sit amet.</li>
+        <li type="square">Lorem ipsum dolor sit amet.</li>
+        <li type="square">Lorem ipsum dolor sit amet.</li>
+        <li type="square">Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <a href="#a_link">前往 a 連結位置</a>
+
+    <hr>
+
+    <h2>html 巢狀概念</h2>
+    <p>巢狀不只在 html，其他技術也會有此概念，巢狀有父、子或祖先關西</p>
+    <p>同一層級又稱為兄弟關西</p>
+
+    <ul>
+        <li>
+            <h3>後端技能</h3>
+            <ol>
+                <li>PHP</li>
+                <li>SQL</li>
+                <li>Laravel</li>
+                <li>database</li>
+            </ol>
+            <h2>前端技能</h2>
+            <ol>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>vue</li>
+            </ol>
+        </li>
+        <li>
+
+        </li>
+    </ul>
+
+    <hr>
+
+    <h2 id="a_link">連結 a</h2>
+    <!-- 
+        屬性
+        href : 超連結的網址
+        target : 開啟方式_blank 新分頁
+     -->
+    <!-- 絕對路徑，去別人家找東西 -->
+    <a href="http://www.google.com" target="_blank">Google</a><br>
+    <a href="https://tw.yahoo.com/">yahoo</a><br>
+    <!-- 相對路徑，自家找東西 -->
+    <a href="./02html_old.html">前往 02html_old.html</a><br>
+    <a href="#ol_list">前往本文見的 ol</a><br>
+    <a href="#ul_list">前往本文見的 ul</a><br>
+
+    <hr>
+
+    <h2>圖片 img</h2>
+    <h3>絕對路徑</h3>
+    <!-- 
+        src : 圖片的路徑
+        width、hight只須設定一個就好，兩個一起設定可能會造成圖片變形
+        title : 滑鼠移到圖片上會顯示的文字
+        alt : 替代文字，圖片連結失效時會顯示
+
+        243新北市太山區貴子里致遠新村55之1號1113教室04號的位置
+     -->
+    <img src="https://ws.wda.gov.tw/Download.ashx?u=LzAwMS9VcGxvYWQvMzA4L2NrZmlsZS9iYTlhMGViZS05YjhkLTQ5OGMtYjlhYS1iNjUxYjYzN2ExODIuanBn&n=dGFpbG9nby5KUEc%3d&icon=.JPG"
+        width='400' alt="泰山職訓局" title="泰山職訓局的大門">
+
+    <!-- 
+            ./ 代表前資料夾
+            ../ 代表上一層資料夾
+            做自己網站開發時，建議使用相對路徑
+            理由是換主機時，網域名稱會改變，絕對路徑會改到瘋掉
+         -->
+    <h3 id="relative">相對路徑</h3>
+    <img src="./imges/下載.jpg" alt="" width="400">
+    <a href="./others/others.html">到 others.html</a>
+
+    <hr>
+
+    <h2>頁框 iframe</h2>
+    <a href="./others/hello.html" target="kaifu">載入 hello.html 到一個叫 name 為 kalfu 頁框裡面</a>
+    <!-- 
+        fromeborder : 邊框
+        width、height : 寬、高
+    -->
+    <!-- 預設頁為 others.html -->
+    <iframe src="./others/images.jpg" frameborder="0" width="800" height="600" name="kaifu"></iframe>
+    <a href="./01.intro.html">回首頁</a>
+
+    <hr>
+    <!-- 
+        cellspacing :儲存格與儲存格之間的距離
+        cellpadding :儲存格內容與邊框的距離
+     -->
+
+    <h2>表格</h2>
+    <table border='1' align="center" width='500' cellspacing="10" cellpadding="10">
+        <caption>後端班級成績表</caption>
+        <!-- 頭 -->
+        <thead>
+            <tr>
+                <!-- 可以穰文字水平垂直置中，粗體 -->
+                <th>姓名</th>
+                <th>PHP</th>
+                <th>JavaScript</th>
+            </tr>
+        </thead>
+        <!-- 身體 -->
+        <tbody>
+            <tr align="center">
+                <td>大明</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr align="center">
+                <td>二明</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr align="center">
+                <td>小明</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <!-- 腳 -->
+        <tfoot>
+            <tr align="center">
+                <td>共3人</td>
+                <td>總平均 : 100</td>
+                <td>總平均 : 100</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <h2>表格合併</h2>
+    <p>colspan(欄合併):左吃右，右消失，colspam='吃幾個+自己'</p>
+    <!--
+         建立一個 6*6 的表格
+         要有邊框、寬度自設、文字水平置中、表格置中
+         例如 6 個 td 有一個數字，1、2、3、4、5、6
+    -->
+    <!-- table>tr*6>td{$}*6 -->
+
+    <hr>
+
+    <h2>表格</h2>
+
+    <table border='1' align="center" width='500' cellspacing="10" cellpadding="10">
+        <caption>另一個表格</caption>
+        <thead>
+            <tr align="center">
+                <td colspan="3">1</td>
+                <td>4</td>
+                <td colspan="2">5</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr align="center">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>表單 form</h2>
+    <!-- 建立一個 10*2 表單 -->
+    <table border="1" width="800" cellspacing="20" cellpadding="20">
+
+        table>tr*10>td*2
+
+    </table>
+
+    <!-- 
+        type 輸入框類型
+        maxLength 字元最大長度
+        size 寬度(css 可以控制寬度)
+        placeholder 佔位文字，提示用
+        ★name 表單名稱，後端接收用 
+     -->
+
+</body>
+
+</html>
